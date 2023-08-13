@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Clipboard from '@react-native-clipboard/clipboard'
 
 import {
   StyleSheet,
@@ -24,6 +25,10 @@ function App(): JSX.Element {
 
   }
 
+  const copyToClipboard = () => {
+    Clipboard.setString(randomBackground);
+  }
+
   return (
 
     <View style={[styles.container, { backgroundColor: randomBackground }]}>
@@ -32,6 +37,11 @@ function App(): JSX.Element {
           style={[styles.button, { backgroundColor: randomBackground === '#000000' ? '#FFFFFF' : '#000000' }]}
           onPress={generateRandomColor}>
           <Text style={[styles.buttonText, { color: randomBackground === '#000000' ? '#000000' : '#FFFFFF' }]}>Change Background</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={[styles.button, { backgroundColor: randomBackground === '#000000' ? '#FFFFFF' : '#000000' }]}
+          onPress={copyToClipboard}>
+          <Text style={[styles.buttonText, { color: randomBackground === '#000000' ? '#000000' : '#FFFFFF' }]}>Copy Hex Code</Text>
         </TouchableOpacity>
       </View>
     </View>
