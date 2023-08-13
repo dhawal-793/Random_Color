@@ -26,7 +26,7 @@ function App(): JSX.Element {
 
   return (
 
-    <View>
+    <View style={[styles.container, { backgroundColor: randomBackground }]}>
       <View>
         <TouchableOpacity onPress={generateRandomColor}>
           <Text>Change Background</Text>
@@ -37,6 +37,12 @@ function App(): JSX.Element {
 }
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
 });
 
 export default App;
