@@ -27,9 +27,11 @@ function App(): JSX.Element {
   return (
 
     <View style={[styles.container, { backgroundColor: randomBackground }]}>
-      <View>
-        <TouchableOpacity onPress={generateRandomColor}>
-          <Text>Change Background</Text>
+      <View style={styles.buttonContainer}>
+        <TouchableOpacity
+          style={[styles.button, { backgroundColor: randomBackground === '#000000' ? '#FFFFFF' : '#000000' }]}
+          onPress={generateRandomColor}>
+          <Text style={[styles.buttonText, { color: randomBackground === '#000000' ? '#000000' : '#FFFFFF' }]}>Change Background</Text>
         </TouchableOpacity>
       </View>
     </View>
@@ -42,6 +44,24 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center'
+  },
+  buttonContainer: {
+    flex: 1,
+    gap: 14,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  button: {
+    alignItems: 'center',
+    paddingVertical: 14,
+    borderRadius: 10,
+    borderwidth: 2,
+    width: 150,
+  },
+  buttonText: {
+    fontSize: 14,
+    color: '#000000',
   },
 });
 
