@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "testapp2.app"
-               BlueprintName = "testapp2"
-               ReferencedContainer = "container:testapp2.xcodeproj">
+               BuildableName = "RandomColor.app"
+               BlueprintName = "RandomColor"
+               ReferencedContainer = "container:RandomColor.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "testapp2Tests.xctest"
-               BlueprintName = "testapp2Tests"
-               ReferencedContainer = "container:testapp2.xcodeproj">
+               BuildableName = "RandomColorTests.xctest"
+               BlueprintName = "RandomColorTests"
+               ReferencedContainer = "container:RandomColor.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "testapp2.app"
-            BlueprintName = "testapp2"
-            ReferencedContainer = "container:testapp2.xcodeproj">
+            BuildableName = "RandomColor.app"
+            BlueprintName = "RandomColor"
+            ReferencedContainer = "container:RandomColor.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "testapp2.app"
-            BlueprintName = "testapp2"
-            ReferencedContainer = "container:testapp2.xcodeproj">
+            BuildableName = "RandomColor.app"
+            BlueprintName = "RandomColor"
+            ReferencedContainer = "container:RandomColor.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -1,4 +1,4 @@
-package com.testapp2;
+package com.randomcolor;
 
 import android.app.Application;
 import com.facebook.react.PackageList;
